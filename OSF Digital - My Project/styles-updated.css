@@ -1,447 +1,196 @@
-* {
-  box-sizing: border-box;
+main {
+  background-color: #f0edeb;
 }
 
-body {
-  width: 400vw;
-}
-
-.desktop {
+img.desktop-404{
   display: none;
 }
-
-.mobile {
+img.mobile-404{
   display: block;
 }
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 5%;
-  background: white;
-  top: 0;
+.main-content div.content-text {
+  font-size: 300%;
 }
-
-#header-container {
+.main-content div.content-text p{
+  margin: 2% 10%;
+}
+div.content-text div.search-part{
+  display: none;
+}
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 8px 50px;
+}
+.hr-sect:before,
+.hr-sect:after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+}
+.hr-sect h1{
+  color: black;
+  opacity: 0.7;
+}
+div.title {
   display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 500%;
 }
 
-div.hamburger {
-  display: block;
-  margin-left: 5%;
-  margin-right: 35%;
+div.title hr {
+  margin: 0;
 }
-
-span.bar {
-  display: block;
-  width: 70px;
-  height: 5px;
-  margin: 20px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #272a32;
+div.home-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 400%;
 }
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu {}
-
-main {
-  margin-top: 12em;
+div.main-content .content-text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
+  align-items: center;
 }
-
-div.top-part div.carousel{
+.main-content div.content-pic {
   display: flex;
   justify-content: center;
-  margin: 1% auto ;
+  width: 100;
+  margin: 5% 0;
 }
 
-div.top-part div.summer-sale {
-  display: none;
-}
-
-div.banner-osf {
-  display: flex;
+.main-content div.content-pic img{
   justify-content: center;
+  width: 60%;
 }
-
-footer {
-  padding: 5%;
+div.home-link p {
+  margin: auto 10px;
+}
+footer strong{
+  font-size: 500%;
+}
+div.column-item ul.column-list li a{
+  font-family: "Maison Neue", sans-serif;
   text-decoration: none;
-  font-size: 3.5em;
+  font-size: 100%;
 }
 
-div#footer-container p {
-  padding-bottom: 5%;
-}
 
-div.contact, div.categories, div.about {
-  padding-bottom: 5%;
-}
-
-footer li, footer a {
-  color: black;
-  list-style: none;
-}
-
-footer div.column-item {
-  opacity: 0.6;
-}
-
-ul.column-list {
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-ul.social-icons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-ul.social-icons li a img {
-  height: 80px;
-  width: 69px;
-}
-
-ul.social-icons img {
-  margin: auto 20px;
-}
-
-div.categories-sections {
-  display: none;
-}
-
-button.footer-button {
-  background-color: inherit;
-  border: none;
-  opacity: 0.8;
-}
-
-button.footer-button:focus {
-  outline: none;
-}
-
-div.functionalities {
-  display: none;
-}
-
-/* Homepage 768px for screens that are between 768px and 1280px */
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  header {
-    height: 5%;
-  }
-
-  header div#header-container {
-    margin-bottom: 0;
-  }
-
-  header div#header-container a.mobile {
-    vertical-align: center;
-  }
-
-  div.hamburger {
-    display: block;
-    margin-left: 5%;
-    margin-right: 40%;
-  }
-
-  div.top-part div.carousel{
-    display: flex;
-    justify-content: center;
-    margin: 1% auto ;
-  }
-
-  footer div#footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  div.banner-osf img {
-    width: 100%;
-  }
-}
-
-/* Homepage 1280px for screens that are bigger than 1280px */
-@media screen and (min-width:1280px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    display: block;
-    font-family: "Maison Neue", sans-serif;
-    width: 100%;
-  }
-
-  /*----------HEADER-------------*/
-  header {
-    height: auto;
-  }
-
-  #header-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto 1%;
-    width: 100%;
-    height: 100%;
-  }
-
-  .desktop {
-    display: block;
-    cursor: pointer;
-    height: 60px;
-    width: 170px;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  div.hamburger {
-    display: none;
-    cursor: pointer
-  }
-
-  div.functionalities {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  nav {
-    font-size: 14px;
-  }
-
-  nav.main-nav {
-    height: auto;
-  }
-
-  ul {
-    padding-inline-start: 0px;
-  }
-
-  ul.nav-links {
-    height: 20px;
-  }
-
-  ul.nav-links, .international {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-  }
-
-  nav.middle ul.international select {
-    border: none;
-    opacity: 0.5;
-  }
-
-  .fa-caret-down, .item {
-    color: #a3a2a0;
-    padding: 0 15px 0 10px;
-  }
-
-  li {
-    display: inline-block;
-    width: inherit;
-    padding: 0px 10px;
-  }
-
-  .nav-links li a {
-    text-decoration: none;
-    color: #51504e;
-    opacity: 0.9;
-  }
-
-  .nav-links li a:hover {
-    color: white;
-    background-color: #272a32;
-  }
-
-  .middle {
-    padding-left: 30px;
-    padding-right: 40px;
-  }
-
-  .functionals {
-    margin-top: 5px;
-  }
-
-  div.dropdown div.dropdown-menu div.first-column {
-    display: flex;
-    flex-direction: block;
-  }
-
-  div.dropdown button#dropdownMenuButton {
-    background: white;
-    color: #51504e;
-    opacity: 0.9;
-    border: none;
-    border-radius: 0;
-    padding-bottom: 10%;
-    font-family: "Maison Neue", sans-serif;
-    font-size: 14px;
-  }
-
-  div.dropdown button#dropdownMenuButton:hover {
-    color: white;
-    background-color: #272a32;
-  }
-
-  /*--------MAIN----------*/
+@media screen and (min-width: 1280px) {
   main {
-    margin-top: 7%;
+    background-color: #f0edeb;
   }
-
-  main div.top-part {
-    display: flex;
-    flex-direction: row;
-  }
-
-  div.top-part div.summer-sale {
+  img.desktop-404{
     display: block;
-    width: 25%;
-    margin-right: 1%;
   }
-
-  div.top-part div.carousel{
-    margin: 0;
-    z-index: -1;
+  img.mobile-404{
+    display: none;
   }
-
-  div.summer-sale div.sale-ad {
-    height: 50%;
-    display: flex;
-    justify-content: center;
-  }
-
-  div.sale-ad img {
-    height: 100%;
-  }
-
-  div.summer-sale div.facebook-contact {
-    text-align: center;
-    margin-top: 10%;
-  }
-
-  div.facebook-contact a img{
-    margin-top: 5%;
-    width: 50%
-  }
-
-  div.facebook-contact a img:hover{
-    filter: grayscale(100%);
-    cursor: pointer;
-  }
-
-  div.static-content {
+  div.home-link {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 3%;
+    font-size: 100%;
   }
 
-  div.static-content img {
-    width: 35%;
-    height: 40%;
+  div.home-link p {
+    margin: auto 10px;
   }
 
-  div.banner-osf {
-    display: flex;
-    justify-content: center;
-  }
-
-  div.banner-osf img {
-    width: 100%;
-  }
-
-  /*--------FOOTER--------*/
-  footer {
-    padding: 0;
-  }
-
-  div.categories-sections {
-    display: block;
-  }
-
-  div#footer-container {
+  div.title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2%;
-    opacity: 0.7;
-    font-size: 30%;
+    font-size: 150%;
   }
 
-  section.contact-text {
-    padding-bottom: 10px;
+  div.title h1 {
+    opacity: 0.8;
   }
 
-  div.categories {
-    display: flex;
-    flex-direction: column;
-  }
-
-  div.columns {
-    display: flex;
-    flex-direction: row;
-  }
-
-  ul.column-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  div.column-item {
-    padding-right: 10%;
-  }
-
-  ul.column-list li {
-    padding-bottom: 20px;
-    padding-left: 0;
-  }
-
-  ul.column-list li a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.65;
-  }
-
-  button.footer-button {
-    text-align: left;
-    padding: 0;
-    padding-bottom: 4%;
-  }
-
-  ul.social-icons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  ul.social-icons li a img {
-    height: 25px;
-    width: 21px;
+  div.title hr {
     margin: 0;
   }
+
+  div.main-content {
+    background-color: white;
+    margin: auto 5%;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-content div.content-pic {
+    width: 50%;
+    margin: 2% 5% 2% 0;
+  }
+
+  .main-content div.content-pic img {
+    width: 100%;
+  }
+
+  .main-content div.content-text{
+    display: block;
+    margin: 5% 0;
+    font-size: 100%;
+  }
+
+  .main-content div.content-text p{
+    margin: 0;
+    margin-right: 20%;
+    line-height: 1.6;
+    opacity: 0.7;
+    font-size: 90%;
+  }
+
+  div.content-text div.search-part{
+    display: block;
+  }
+
+  div.wrap div.search{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f0edeb;
+    border-radius: 96px;
+  }
+
+  input.searchTerm, button.searchButton{
+    border: none;
+    padding: 1%;
+    border-radius: 96px;
+    margin: 0;
+  }
+  input.searchTerm{
+    margin-left: 2%;
+    width: 100%;
+  }
+  input.searchTerm:focus{
+    outline: none;
+  }
+button.searchButton{
+  display: flex;
+  justify-content: flex-end;
+}
+  footer strong{
+    font-size: 130%;
+  }
+  div.column-item ul.column-list li a{
+    font-family: "Maison Neue", sans-serif;
+    text-decoration: none;
+    font-size: 100%;
+  }
+
 }
