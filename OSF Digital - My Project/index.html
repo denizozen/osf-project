@@ -9,8 +9,9 @@
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <title></title>
 </head>
 
@@ -23,76 +24,73 @@
         <span class="bar"></span>
       </div>
       <a href=" index.html"><img src="images/logo.png" alt="OSF Global Logo" width="500" height="200" class="desktop" /></a>
-      <a href=" index.html"><img src="images/osf-logo-mobile.png" class="mobile" height="158" width="200" /></a>
-      <div class="functionalities">
+      <a href="index.html" id="mobile-header"><img src="images/osf-logo-mobile.png" class="mobile" height="58" width="74" /></a>
+      <div class="functionalities" style="margin-right: 5%;">
         <nav class="main-nav">
           <ul class="nav-links">
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  SERVICES
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <div class="columns">
-                    <div class="first-column">
-                      <h4>PRODUCT CATEGORIES</h4>
-                      <div class="categories-columns" style="display:flex flex-direction: row">
-                        <div class="product-categories">
-                          <a class="dropdown-item" href="#">Accesories</a>
-                          <a class="dropdown-item" href="#">Alcohol</a>
-                          <a class="dropdown-item" href="#">Art</a>
-                          <a class="dropdown-item" href="#">Books</a>
-                          <a class="dropdown-item" href="#">Drink</a>
-                          <a class="dropdown-item" href="#">Electronics</a>
-                          <a class="dropdown-item" href="#">Flowers & Plants</a>
-                          <a class="dropdown-item" href="#">Food</a>
-                        </div>
-                        <div class="product-categories">
-                          <a class="dropdown-item" href="#">Gadgets</a>
-                          <a class="dropdown-item" href="#">Garden</a>
-                          <a class="dropdown-item" href="#">Grocery</a>
-                          <a class="dropdown-item" href="#">Home</a>
-                          <a class="dropdown-item" href="#">Jewelry</a>
-                          <a class="dropdown-item" href="#">Kids & Baby</a>
-                          <a class="dropdown-item" href="#">Men's Fashion</a>
-                          <a class="dropdown-item" href="#">Mobile</a>
-                        </div>
-                        <div class="product-categories">
-                          <a class="dropdown-item" href="#">Motorcycles</a>
-                          <a class="dropdown-item" href="#">Movies</a>
-                          <a class="dropdown-item" href="#">Music</a>
-                          <a class="dropdown-item" href="#">Office</a>
-                          <a class="dropdown-item" href="#">Pets</a>
-                          <a class="dropdown-item" href="#">Romantic</a>
-                          <a class="dropdown-item" href="#">Sport</a>
-                          <a class="dropdown-item" href="#">Toys</a>
-                        </div>
-                      </div>
+            <li class="nav-item" id="item-services" >
+              <a href="#" id="services-but">SERVICES</a>
+              <div class="mega-box" id="mega-box">
+                <div class="mega-content">
+                  <div class="row">
+                    <h4 class="mega-header" id="product-cat">Product Categories</h4>
+                    <div class="first-column-mega" id="first-column-mega">
+                      <ul class="mega-links low-row">
+                        <li><a href="not-found.html">Accessories</a></li>
+                        <li><a href="not-found.html">Alcohol</a></li>
+                        <li><a href="not-found.html">Art</a></li>
+                        <li><a href="not-found.html">Books</a></li>
+                        <li><a href="not-found.html">Drink</a></li>
+                        <li><a href="not-found.html">Electronics</a></li>
+                        <li><a href="not-found.html">Flowers & Plants</a></li>
+                        <li><a href="not-found.html">Food</a></li>
+                      </ul>
+                      <ul class="mega-links low-row">
+                        <li><a href="not-found.html">Gadgets</a></li>
+                        <li><a href="not-found.html">Garden</a></li>
+                        <li><a href="not-found.html">Grocery</a></li>
+                        <li><a href="not-found.html">Home</a></li>
+                        <li><a href="not-found.html">Jewelry</a></li>
+                        <li><a href="not-found.html">Kids & Baby</a></li>
+                        <li><a href="not-found.html">Men's Fashion</a></li>
+                        <li><a href="not-found.html">Mobile</a></li>
+                      </ul>
+                      <ul class="mega-links low-row">
+                        <li><a href="not-found.html">Motorcycles</a></li>
+                        <li><a href="not-found.html">Movies</a></li>
+                        <li><a href="not-found.html">Music</a></li>
+                        <li><a href="not-found.html">Office</a></li>
+                        <li><a href="not-found.html">Pets</a></li>
+                        <li><a href="not-found.html">Romantic</a></li>
+                        <li><a href="not-found.html">Sport</a></li>
+                        <li><a href="not-found.html">Toys</a></li>
+                      </ul>
                     </div>
-                    <div class="second-column">
-                      <a class="dropdown-item" href="#">Accesories</a>
-                      <a class="dropdown-item" href="#">Alcohol</a>
-                      <a class="dropdown-item" href="#">Art</a>
-                      <a class="dropdown-item" href="#">Books</a>
-                      <a class="dropdown-item" href="#">Drink</a>
-                      <a class="dropdown-item" href="#">Electronics</a>
-                      <a class="dropdown-item" href="#">Flowers & Plants</a>
-                      <a class="dropdown-item" href="#">Food</a>
-                    </div>
-                    <div class="third-column">
-                      <a href="#"><img class="queries" src="images/search.png" alt="OSF Global Logo" width="27px" height="27px"></a>
-                    </div>
+                  </div>
+                  <div class="row">
+                    <h4 class="mega-header" id="sale-but">Sale</h4>
+                    <ul class="mega-links low-row" id="sale" >
+                      <li><a href="not-found.html">Accessories</a></li>
+                      <li><a href="not-found.html">Alcohol</a></li>
+                      <li><a href="not-found.html">Art</a></li>
+                      <li><a href="not-found.html">Books</a></li>
+                      <li><a href="not-found.html">Drink</a></li>
+                      <li><a href="not-found.html">Electronics</a></li>
+                      <li><a href="not-found.html">Flowers & Plants</a></li>
+                      <li><a href="not-found.html">Food</a></li>
+                    </ul>
+                  </div>
+                  <div class="row" id="desktop-menu-pic">
+                    <img src="images/product-11.png" width="200">
                   </div>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="dropdown">
-                <a href="not-found.html">COMPANY</a>
-              </div>
+            <li class="nav-item">
+              <a href="not-found.html">COMPANY</a>
             </li>
-            <li><a href="not-found.html">LIBRARY</a></li>
-            <li><a href="not-found.html">CONTACT US</a></li>
+            <li class="nav-item"><a href="not-found.html">LIBRARY</a></li>
+            <li class="nav-item"><a href="not-found.html">CONTACT</a></li>
           </ul>
         </nav>
         <nav class="middle">
@@ -113,12 +111,32 @@
             </li>
           </ul>
         </nav>
-        <nav>
+        <nav class="func">
           <ul class="functionals">
-            <li><a href="#"><img class="queries" src="images/search.png" alt="OSF Global Logo" width="27px" height="27px"></a></li>
-            <li><a href="#"><img class="queries" src="images/login.png" alt="OSF Global Logo" width="27px" height="27px"></a></li>
-            <li><a href="#"><img class="queries" src="images/wishlist.png" alt="OSF Global Logo" width="36px" height="36px"></a></li>
-            <li><a href="#"><img class="queries" src="images/bag.png" alt="OSF Global Logo" width="36px" height="36px"></a></li>
+            <li>
+              <span class="material-icons-outlined">
+                search
+              </span>
+            </li>
+            <li>
+              <button onclick="signIn()" style="width:auto; border:none; background-color: transparent; padding: 0;">
+                <span class="material-icons">
+                  person_outline
+                </span>
+              </button>
+            </li>
+            <li class="wish-cart">
+              <span class="material-icons">
+                favorite_border
+              </span>
+              <div id="wishAmount" class="wish-cart-amount">0</div>
+            </li>
+            <li class="wish-cart">
+              <span class="material-icons-outlined">
+                shopping_bag
+              </span>
+              <div id="cartAmount" class="wish-cart-amount">0</div>
+            </li>
           </ul>
         </nav>
       </div>
@@ -126,6 +144,40 @@
     <hr style="border: 2px solid #f3f0ea; margin:0px;">
   </header>
   <main>
+    <div class="container">
+      <div class="row" style="justify-content: center;">
+        <div class="col-md-5 mx-auto" id="pop-up-sign-in" style="display: none; padding-top: 5%;">
+          <div class="card card-body">
+            <form id="submitForm" action="/index.html" method="get">
+              <div class="pop-up-title">
+                <h4><strong>Sign in</strong>
+                  <h4>
+              </div>
+              <div class="form-group required">
+                <label for="username">Email</label>
+                <input type="email" class="form-control text-lowercase" id="username" required="" name="username" value="">
+              </div>
+              <div class="form-group required">
+                <label class="d-flex flex-row align-items-center" for="password">Password
+                  <a class="ml-auto border-link small-xl" href="/" style="color: #95bb47">forgot password</a></label>
+                <div class="password-segment">
+                  <input style="border: none;" type="password" class="form-control" id="password" name="password" required pattern="^(?=.{6,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$">
+                  <span class="material-icons visibility">
+                    visibility_off
+                  </span>
+                </div>
+              </div>
+              <div class="form-group pt-1">
+                <button class="btn btn-primary btn-block" type="submit">LOGIN</button>
+              </div>
+            </form>
+            <p class="small-xl pt-3 text-center">
+              <a href="/signup" style="color: #95bb47">I don't have an account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="top-part">
       <!-- Used bootstrap for this part  -->
       <div class="carousel">
@@ -142,7 +194,7 @@
             <div class="item active">
               <img src="images/carousel-first.png" alt="Generic Picture" class="carousel-desktop">
               <img src="images/carousel-first-mobile.png" alt="Generic Picture" class="carousel-mobile">
-              <div class="carousel-caption">
+              <div class="carousel-caption" id="first-car" style="text-align:left;">
                 <h1><strong>Control and manage any device with cloud solutions</strong></h1>
                 <p>Improve business performance and the user experience with the right mix of IoT technology and processes </p>
                 <p class="mobile-text">doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
@@ -154,7 +206,7 @@
             <div class="item">
               <img src="images/carousel-second.png" alt="Generic Picture" class="carousel-desktop">
               <img src="images/carousel-second-mobile.png" alt="Generic Picture" class="carousel-mobile">
-              <div class="carousel-caption">
+              <div class="carousel-caption" id="sec-car" style="text-align:middle;">
                 <h1><strong>Control and manage any device with cloud solutions</strong></h1>
                 <p>Improve business performance and the user experience with the right mix of IoT technology and processes </p>
                 <p class="mobile-text">doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
@@ -166,7 +218,7 @@
             <div class="item">
               <img src="images/carousel-third.png" alt="Generic Picture" class="carousel-desktop">
               <img src="images/carousel-third-mobile.png" alt="Generic Picture" class="carousel-mobile">
-              <div class="carousel-caption">
+              <div class="carousel-caption" id="third-car" style="text-align:right;">
                 <h1><strong>Control and manage any device with cloud solutions</strong></h1>
                 <p>Improve business performance and the user experience with the right mix of IoT technology and processes </p>
                 <p class="mobile-text">doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
@@ -199,22 +251,261 @@
       </div>
     </div>
     <div class="popular-items">
+      <div class="popular-items-title">
+        <div class="hr-sect">
+          <h3>Popular Items</h3>
+        </div>
+      </div>
+      <div class="popular-items-content">
+        <div class="pop-content-mobile">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="popular-product">
+                  <div class="pop-pro-img">
+                    <img src="images/product-1.png" alt="Product Image">
+                  </div>
+                  <div class="pop-pro-text">
+                    <p style="color: black; opacity: 0.7;">Kristina Dam Oak Table With <br> White Marble Top</p>
+                    <p style="color: #1a2b53;">$ 799.55</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="popular-product">
+                  <div class="pop-pro-img">
+                    <img src="images/product-2.png" alt="Product Image">
+                  </div>
+                  <div class="pop-pro-text">
+                    <p style="color: black; opacity: 0.7;">Hay - About A Lounge <br>Chair AAL 93</p>
+                    <p style="color: #1a2b53;">$ 659.55 </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="popular-product">
+                  <div class="pop-pro-img">
+                    <img src="images/product-3.png" alt="Product Image">
+                  </div>
+                  <div class="pop-pro-text">
+                    <p style="color: black; opacity: 0.7;">Cocktail Table Walnut<br>| YES</p>
+                    <p style="color: #1a2b53;">$ 299.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="popular-product">
+                  <div class="pop-pro-img">
+                    <img src="images/product-4.png" alt="Product Image">
+                  </div>
+                  <div class="pop-pro-text">
+                    <p style="color: black; opacity: 0.7;">Hay - About A Lounge <br>Chair AAL 93</p>
+                    <p style="color: #1a2b53;">$ 659.55</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="popular-product">
+                  <div class="pop-pro-img">
+                    <img src="images/product-5.png" alt="Product Image">
+                  </div>
+                  <div class="pop-pro-text">
+                    <p style="color: black; opacity: 0.7;">TORY DESK <br> CALENDAR </p>
+                    <p> </p>
+                    <p style="color: #1a2b53;">$ 410.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-content" style="padding: 3%">
+          <div class="pop-content-desktop" id="shop" style="margin: 2% 0;">
+            <div id="product-id-product02" style="position: relative;">
+              <div class="pop-pro-img">
+                <img width="100%" src="images/product-2.png" alt="Product Image">
+              </div>
+              <div class="pop-pro-text">
+                <p style="color: black; opacity: 0.7; margin: 0;">Hay - About A Lounge <br>Chair AAL 93</p>
+                <div class="special-buy" style="padding: 0;">
+                  <p style="color: green; margin: 0 4%; padding: 0;">$ 659.55</p>
+                  <div style=" margin: 0; height: 30px; border-left: 1px solid grey;"> </div>
+                  <button onclick="incrementCart(cartproduct02)"> BUY NOW</button>
+                  <div id="cartproduct02" class="quantity" style="display: none;">0 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pop-content-row" id="load-more-content"> </div>
+          <div class="load-more-button">
+            <button type="button" name="button" id="load-more" onclick="loadButton()">
+              <p id="button-more" style="display: block; padding: 0px;"> LOAD MORE</p>
+              <p id="button-less" style="display: none; padding: 0px;"> LOAD LESS</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <div class="banner-osf">
-      <img src="images/banner-osf.png" alt="Banner OSF">
-    </div>
-    <div class="featured-products">
-
+      <img width="100%"src="images/banner-osf.png" alt="Banner OSF">
+  </div>
+    <div class="featured-products" style="background-color: #272a32;">
+      <div class="title-feat" style="text-align: center; color: white;">
+        <h1 style="margin-top:0;">Featured Products</h1>
+        <p>Unde omnis iste natus error sit voluptatem</p>
+      </div>
+      <div class="slider-feat">
+        <ul class="slider" id="feat-slider">
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-9.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Awesome</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-6.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Marketing</p>
+              </div>x
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-11.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Awesome</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-10.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Marketing</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-12.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Awesome</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-7.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Marketing</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-10.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Awesome</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="featured-product">
+              <div class="featured-img">
+                <img src="images/product-12.png" alt="Product Image">
+              </div>
+              <div class="featured-text">
+                <p style="color: black; opacity: 0.7; padding-top: 2%">Kristina Dam Oak Table With <br> White Marble Top</p>
+                <p style="color: #95bb47; padding-bottom: 2%;">Marketing</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="static-content">
+      <div class="static-text">
+        <img src="images/focus.png" alt="">
+        <div class="static-text-text">
+          <h4>FOCUS</h4>
+          <p>Our unwavering focus on superior service delivery and building next generation competencies</p>
+        </div>
+      </div>
+      <div class="static-text" id="method">
+        <img src="images/method.png" alt="">
+        <div class="static-text-text">
+          <h4>METHOD</h4>
+          <p>A standardized methodology designed to deliver measurable business results and predictable costs</p>
+        </div>
+      </div>
+      <div class="static-text">
+        <img src="images/knowledge.png" alt="">
+        <div class="static-text-text">
+          <h4>KNOWLEDGE</h4>
+          <p>A highly skilled, proactive workforce that reliably improves each client's ROI while mitigating their business risk</p>
+        </div>
+      </div>
+    </div>
+    <div id="consent-popup" class="hidden" style="display: flex;">
+      <div class="consent-text">
+        <h4 style="color: #95bb47">This Website uses cookies</h4>
+        <p>OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website performance <br>
+          and interaction with social media offering publicity tailored to your interests. If you continue browsing, we consider that you accept its use. <br>
+          You can expand this information consulting our <a href="#" style="color: #95bb47">Cookies Policy Page</a> </p>
+      </div>
+      <button id="accept">ACCEPT</button>
+      <button id="closeCookie" onclick="hideCookies()"> <span class="material-icons-outlined">
+          close
+        </span> </button>
     </div>
   </main>
   <footer>
     <div id="footer-container">
       <div class="contact">
         <section class="contact-text">
-          <p>&copy Copyright 2019. <br> All rights reserved.</p>
+          <div class="copyright-text" style="display: flex;">
+            <p style="margin-right: 3%;">&copy Copyright</p>
+            <p id="specific-year"></p>
+            <p>.</p>
+          </div>
+          <p> All rights reserved.</p>
         </section>
         <section class="contact-text">
           <button class="footer-button" onclick="myFunction()"><strong> CONTACT</strong> </button>
@@ -284,10 +575,36 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script-2.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript">
+    $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: '<span class="material-icons left"> navigate_before </span>',
+      nextArrow: '<span class="material-icons right"> navigate_next </span>',
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        }]
+    });
+  </script>
+
 </body>
 
 </html>
