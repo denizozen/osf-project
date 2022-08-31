@@ -1,0 +1,355 @@
+div.mobile-title{
+  display: none;
+}
+div.functionalities .middle,  div.functionalities .func{
+  display: none;
+}
+.popular-product .buttons-product{
+  display: none;
+}
+
+.popular-product:hover .buttons-product{
+  display: block;
+}
+
+div.hr-sect h1{
+  margin-right: 5%;
+  margin-left: 5%;
+  font-family: "Helvetica";
+  font-size: 4rem;
+}
+
+.hr-sect:before,
+.hr-sect:after {
+  background: white;
+}
+
+div.filters{
+  background-color: white;
+  margin: 5%;
+  flex-direction: column;
+}
+button.hide-filters{
+  font-size:1rem;
+  border: none;
+  background-color: transparent;
+  color: #95bb47;
+}
+div.filters div.filter-select{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:5%;
+  font-size: 2rem;
+}
+div.filters select{
+  width: 60%;
+  border-radius: 96px;
+  border-width: 2px;
+  margin-right: 10%;
+  font-size: 100%;
+  padding-left: 7%;
+  opacity: 0.8;
+}
+div.filters label{
+  font-size: 2rem;
+  margin: 0 5%;
+}
+.services-shop{
+  display: grid;
+  grid-template-columns: repeat(1, 15rem);
+  gap: 5%;
+  row-gap: 1%;
+  justify-content: center;
+  margin-bottom: 65%;
+}
+div#load-more-content{
+  display: grid;
+  grid-template-columns: repeat(1, 15rem);
+  gap: 2%;
+  margin-bottom: 40%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .services-shop{
+    height: 790vh;
+  }
+
+  button#load-more{
+    background-color: #95bb47;
+    border:none;
+  }
+  div.load-more-button{
+    margin-bottom: 2%;
+  }
+
+  div.pop-pro-text p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  div.popular-product{
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.special-buy {
+    margin: auto;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border: 1px solid grey;
+    border-radius: 96px;
+    font-size: 10px;
+  }
+  div.special-buy button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 5rem;
+  }
+  .wishButton, .cartButton{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    top: 90px;
+  }
+  .wishButton:hover, .cartButton:hover{
+    outline: none;
+  }
+  .wishButton:focus, .cartButton:focus{
+    outline: none;
+    border: none;
+  }
+  .cartButton{
+    width: 60%;
+  }
+  .wishButton{
+    left: 120px;
+    width: 45%;
+  }
+  div.load-more-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+  .load-more-button button{
+    padding: 2% 7%;
+    border-radius: 96px;
+  }
+  .load-more-button button p{
+    font-size: 1rem;
+    color: white;
+  }
+  div.filter-select div.color-picker button{
+    padding: 30%;
+    margin-right: 10%;
+    border-color: transparent;
+    border-radius: 96px;
+  }
+
+  div.filter-select div.color-picker button:focus{
+    border: 2px solid gray;
+  }
+  div#color-picker{
+     justify-content:flex-start;
+  }
+  div#color-picker button{
+    padding: 20%;
+  }
+  div.results-text p{
+    font-size: 2rem;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  div.mobile-title{
+    display: block;
+  }
+  div.hr-sect h1{
+    font-size: 3rem;
+  }
+  button.hide-filters p{
+    font-size: 1rem;
+  }
+  div.filters div.filter-select{
+    justify-content: space-evenly;
+  }
+  div.filters label{
+    font-size: 2rem;
+  }
+  div.filters select{
+    width: 50%;
+    height: 50%;
+    font-size: 1.3rem;
+    border-width: 2px;
+  }
+  div.results-text p{
+    font-size: 1.5rem;
+  }
+  .services-shop{
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    gap: 7%;
+    row-gap: 2%;
+    justify-content: center;
+    margin-bottom: 65%;
+  }
+  div#load-more-content{
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    margin: 0;
+    margin-bottom: 10%;
+    gap: 7%;
+    justify-content: center;
+  }
+  div.load-more-button button p{
+    font-size: 1rem;
+  }
+  div.pop-pro-text p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  div.load-more-button button{
+    background-color: #95bb47;
+  }
+  div.load-more-button{
+    margin-bottom: 3%;
+  }
+
+  div.filter-select div.color-picker button{
+    padding: 110%;
+    margin-right: 120%;
+    border-color: transparent;
+    border-radius: 96px;
+  }
+
+  div.filter-select div.color-picker button:focus{
+    border: 2px solid gray;
+  }
+  div#color-picker{
+     justify-content:flex-start;
+  }
+  div#color-picker button{
+    padding: 40%;
+    margin: 0 20%;
+  }
+  div#color-picker .filter-name{
+    margin-left:13%;
+    margin-right: 10%;
+  }
+  .wishButton{
+    left: 180px;
+  }
+}
+@media screen and (min-width:1280px) {
+  div.mobile-title{
+    display: block;
+  }
+  div.hr-sect h1{
+    font-size: 4vw;
+  }
+  button.hide-filters{
+    display: none;
+  }
+  div.filters{
+    flex-direction: row;
+    justify-content: space-around;
+    margin:5%;
+    margin-top: 0;
+  }
+
+  div.filters select{
+    width: 10vw;
+    height: 5vh;
+    font-size: 1vw;
+    border-width: 2px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.filters label{
+    font-size: 1.5vw;
+    margin-right:15%;
+  }
+  div.filters div.filter-select{
+    justify-content: center;
+  }
+  div.filter-duo{
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .services-shop{
+    display: grid;
+    grid-template-columns: repeat(4, 265px);
+    gap: 2%;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  div#load-more-content{
+    display: grid;
+    grid-template-columns: repeat(4, 265px);
+    margin: 0;
+    margin-bottom: 3%;
+    gap: 2%;
+    justify-content: center;
+  }
+
+  div.pop-pro-text p{
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 0;
+    padding: 3% 8%;
+  }
+  div.popular-product{
+    display: flex;
+    flex-direction: column;
+  }
+  button#load-more{
+    background-color: #95bb47;
+    border:none;
+  }
+  div.load-more-button{
+    margin-bottom: 2%;
+  }
+
+  div.filter-select div.color-picker button{
+    padding: 25%;
+    margin-right: 25%;
+    border-color: transparent;
+    border-radius: 96px;
+  }
+
+  div.filter-select div.color-picker button:focus{
+    border: 2px solid gray;
+  }
+  div#color-picker{
+     justify-content:flex-start;
+    margin-left: 13%;
+  }
+  div#color-picker .filter-name{
+    margin-right:0;
+  }
+  div#footer-container {
+    font-size: 1rem;
+  }
+  div.functionalities .middle,  div.functionalities .func{
+    display: block;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: inherit;
+    background-color: white;
+  }
+
+}
