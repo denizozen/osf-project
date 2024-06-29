@@ -1,2 +1,2 @@
 # osf-project
-My project for OSF Digital's 2022 Frontend Development internship
+Frontend of an E-Commerce website for OSF Digital's 2022 Frontend Development internship
